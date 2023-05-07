@@ -1,0 +1,21 @@
+spring:
+  main:
+    allow-circular-references: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: Fariyudantas1.
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        jdbc:
+          batch_size: 50
+          order_inserts: true
+
+filePath: /Users/macm1/downloads/file.txt
+
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG
